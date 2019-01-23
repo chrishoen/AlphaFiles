@@ -1,0 +1,66 @@
+//********************************************************************
+//********************************************************************
+//********************************************************************
+
+SectionBegin Default
+
+   // Display number, usually 1.
+   Display                1
+
+   // Window colors. RGB,A
+   ForeColor              255     255    255    255
+   BackColor              0       0      0      255
+
+   // PNG image filenames.
+   ImageFilename0         Image3840_0.png
+   ImageFilename1         Image3840_1.png
+   
+   // Target test variables.
+   SideX                  80
+   SideY                  60
+
+   // Timer thread period milliseconds.
+   TimerThreadPeriod      250
+   TimerThreadPeriod      500
+   
+   // If not zero then the draw latency is printed.
+   ShowCode               1
+   
+   // Thread services print and log levels.
+   PrintLevel             3 3
+
+SectionEnd
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+
+SectionBegin Default3840
+
+   //*****************************************************************
+   //*****************************************************************
+   //*****************************************************************
+   
+   // Window width and height.
+   WindowWidthHeight      1920   1080
+   WindowWidthHeight      3840   2160
+
+   // Window colors. RGB,A
+   ForeColor              255     255    255    255
+   BackColor              0       0      0      255
+
+   // PBG image filenames.
+   ImageFilename0         Image1920_0.png
+   ImageFilename1         Image1920_1.png
+   ImageFilename0         Image3840_0.png
+   ImageFilename1         Image3840_1.png
+   
+   // Target test variables.
+   SideX                  80
+   SideY                  60
+
+   // Timer thread period milliseconds.
+   TimerThreadPeriod      100
+   
+SectionEnd
+

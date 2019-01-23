@@ -1,0 +1,23 @@
+//********************************************************************
+//********************************************************************
+//********************************************************************
+
+SectionBegin default
+
+   // Program root directory filepath.
+   BaseDirPath            /home/linaro/cprint
+
+   // Show code.
+   ShowCode               0
+   SplashCode             1
+
+   // Wait for this time before each script command execution.
+   ScriptThrottle         10 
+
+   // Thread enable flags.
+   MessageEnable          true
+   GCodeCommEnable        true
+   LcdGraphicsEnable      true
+
+SectionEnd
+

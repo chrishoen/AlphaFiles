@@ -1,0 +1,28 @@
+//********************************************************************
+//********************************************************************
+//********************************************************************
+
+SectionBegin default
+
+   // Log file timestamp type.
+   TimeType            SystemTime
+
+   // Log file filename.
+   LogFilename         /home/linaro/cprint/files/WorkLog.txt
+
+   // If true then the log filename is the full path.
+   FullFilepath       true
+
+   // If zero then the log file write is not flushed. If non zero then the
+   // log file is flushed after every N counts.
+   FlushModulo         0
+   
+   // If zero then flush uses fflush.
+   // If one  then flush uses fclose and fopen.
+   FlushMode           0
+   
+   // Thread services print and log levels.
+   PrintLevel          3 3
+
+SectionEnd
+

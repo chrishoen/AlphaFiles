@@ -1,0 +1,68 @@
+//********************************************************************
+//********************************************************************
+//********************************************************************
+
+SectionBegin Default
+
+   //*****************************************************************
+   //*****************************************************************
+   //*****************************************************************
+   
+   // Display number, usually 1.
+   Display                0
+
+   // Window colors. RGB,A
+   ForeColor              255     255    255    255
+   BackColor              0       0      0      255
+
+   // PNG image filenames.
+   ImageFilename0         Image1920_0.png
+   ImageFilename1         Image1920_1.png
+   ImageFilename0         Image1440_0.png
+   ImageFilename1         Image1440_1.png
+   
+   // Target test variables.
+   SideX                  80
+   SideY                  60
+
+   // Timer thread period milliseconds.
+   TimerThreadPeriod      1000
+   
+   // If not zero then the draw latency is printed.
+   ShowCode               1
+
+SectionEnd
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+
+SectionBegin Default3840
+
+   //*****************************************************************
+   //*****************************************************************
+   //*****************************************************************
+   
+   // Window width and height.
+   WindowWidthHeight      1920   1080
+   WindowWidthHeight      3840   2160
+
+   // Window colors. RGB,A
+   ForeColor              255     255    255    255
+   BackColor              0       0      0      255
+
+   // PBG image filenames.
+   ImageFilename0         Image1920_0.png
+   ImageFilename1         Image1920_1.png
+   ImageFilename0         Image3840_0.png
+   ImageFilename1         Image3840_1.png
+   
+   // Target test variables.
+   SideX                  80
+   SideY                  60
+
+   // Timer thread period milliseconds.
+   TimerThreadPeriod      100
+   
+SectionEnd
+

@@ -1,0 +1,22 @@
+//********************************************************************
+//********************************************************************
+//********************************************************************
+
+SectionBegin Default
+
+   // Usb serial ports.
+   GCodePortDevice        /dev/ttyACM0
+   MessagePortDevice      /dev/ttyACM1
+   
+   // Thread services print and log levels.
+   GCodePrintLevel        3 3
+   MessagePrintLevel      3 3
+   SerialMsgPrintLevel    3 3
+
+   // Feynman csen settings variables.
+   CSenPrintEnable        false 
+   CSenSampleEnable       false 
+   CSenTimerModulo        10
+
+SectionEnd
+
