@@ -1,0 +1,62 @@
+//******************************************************************************
+//******************************************************************************
+//******************************************************************************
+
+SectionBegin Default
+
+   //***************************************************************************
+   //***************************************************************************
+   //***************************************************************************
+
+   TargetWindow
+   {
+      // Size of the display to show the target image on.
+      DisplaySize           640      480
+
+      // Start point of the display.
+      DisplayStartXY        0        0
+      DisplayStartXY        0        0
+    
+      // Size of the window image within the display.
+      WindowSize            640      480
+     
+      // Window offsets within the display.
+      WindowOffsetXY        0         0
+     
+      // Time to wait for display to settle.
+      WaitKeyTime            100
+      DisplaySettleTime      100
+
+      // Enable the display.
+      EnableFlag            true
+   }
+
+   //***************************************************************************
+   //***************************************************************************
+   //***************************************************************************
+
+   CaptureWindow
+   {
+      // Size of the display to show the capture image on.
+      DisplaySize           1920   1080
+
+      // Start point of the display.
+      DisplayStartXY        3300   0
+
+      // Size of the window image within the display.
+      WindowSize            1224    1024
+     
+      // Window offsets within the display.
+      WindowOffsetXY        0         0
+     
+      // Time to wait for display to settle.
+      WaitKeyTime           100
+      DisplaySettleTime     100
+
+      // Enable the display.
+      EnableFlag            false
+   }
+
+
+SectionEnd
+
