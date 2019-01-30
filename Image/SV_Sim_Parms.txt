@@ -8,28 +8,48 @@
 SectionBegin Default
 
    //*****************************************************************
-   // Randomizer
+   // Image generator.
+
+   // Image point
+   ImageGenParms         ImageGenSquare1
+   ImageGenParms         ImageGenImpulse1
+   ImageGenParms         ImageGenGaussian1
+   ImageGenParms         ImageGenCircle1
 
    // Image point
    CenterPixel           100      200
 
-
    // Image file name.
-   ImageFilename         SimImage.png
-
-   //*****************************************************************
-   // Synthetic image generation.
-
-   // Pulse parms.
-   PulsePixelWidth       41
-   PulseGaussianWidth    20
-   PulseAmplitude        200.0
+   ImageFilename1        SimImage1.png
+   ImageFilename2        SimImage2.png
    
-   //*****************************************************************
-   // Randomizer
+   // Random noise.
+   NoiseSigma            0.0
 
-   // Image size.
-   Sigma               0.0
+SectionEnd
 
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Image generator parameters.
 
+SectionBegin ImageGenCircle1
+   ImageType             Circle
+   ImageB                50
+SectionEnd
+
+SectionBegin ImageGenSquare1
+   ImageType             Square
+   ImageB                50
+SectionEnd
+
+SectionBegin ImageGenImpulse1
+   ImageType             Impulse
+SectionEnd
+
+SectionBegin ImageGenGaussian1
+   ImageType             Gaussian
+   ImageB                100
+   GaussianWidth         20.0
+   GaussianAmplitude     100.0
 SectionEnd

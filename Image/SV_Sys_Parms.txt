@@ -10,12 +10,12 @@ SectionBegin Default
    //*****************************************************************
    // Pixel parameters.
 
+   // Image size.
+   ImageSize                400      400
+   
    // Pixel variables.
    ImagePixelPitch          0.00345
 
-   // Image size.
-   ImageSize                200      400
-   
    // Sensor limits.
    ImageRowLimit            0
    ImageColLimit            0

@@ -4,16 +4,15 @@
 
 SectionBegin Default
 
+   // Size of the window.
+   WindowWidthHeight      400    400
+
    // Display number, usually 1.
-   Display                1
+   Display               -1
 
    // Window colors. RGB,A
    ForeColor              255     255    255    255
    BackColor              0       0      0      255
-
-   // PNG image filenames.
-   ImageFilename0         Image3840_0.png
-   ImageFilename1         Image3840_1.png
    
    // Target test variables.
    SideX                  80
