@@ -1,0 +1,70 @@
+//********************************************************************
+//********************************************************************
+//********************************************************************
+//********************************************************************
+//********************************************************************
+//********************************************************************
+
+SectionBegin Default
+
+   //*******************************************************************
+   // Point parameters.
+
+   // PGrid search neighborhood..
+   NeighborhoodSize             200
+   
+   // If true then use the noise floor for thresholding.
+   NoiseFloorFlag          false
+   
+   // Thresholds.
+   SearchThreshold         5.0
+   TrackThresholdScale     0.06
+   TrackThresholdMin       2.5
+
+   // If the number of pixels that are above the threshold are within
+   // these numbers then there are enough pixels to calculate a
+   // point estimate. 
+   ThresholdAboveMin        65
+   ThresholdAboveMax        1000
+
+   // If true then the search four limit will be calculated automatically.
+   Search4AutoFlag          false
+   Search4Scale             0.90
+   Search4Limit             7
+   
+   // Slant alpha filter alpha.
+   SlantFilterAlpha         0.10 
+   
+   // Point Estimator.
+   PointEstimatorLimit      12
+   PointEstimatorLimit      11
+   
+   // If true then throw an exception if stage4 isn't reached.
+   Stage4ThrowFlag          true
+
+   //*******************************************************************
+   // Image parameters.
+   
+   // Image guassian blur filtering variables.
+   GaussBlurFlag                true
+   GaussBlur                    7
+   
+   // Image alpha filter variables.
+   AlphaFilterFlag              false 
+   Alpha                        0.10 
+ 
+
+   //*******************************************************************
+   // File parameters.
+   
+   // Log enable flag.
+   LogEnable                    false
+
+   // Image directory.
+   ImageDir                     C:\Alpha\Image
+   
+   // Image file save flags.
+   ImageSaveFlag                false
+  
+SectionEnd
+

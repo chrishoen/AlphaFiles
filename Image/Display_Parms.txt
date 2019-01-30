@@ -1,62 +1,66 @@
-//******************************************************************************
-//******************************************************************************
-//******************************************************************************
+//********************************************************************
+//********************************************************************
+//********************************************************************
 
 SectionBegin Default
 
-   //***************************************************************************
-   //***************************************************************************
-   //***************************************************************************
+   // Display number, usually 1.
+   Display                1
 
-   TargetWindow
-   {
-      // Size of the display to show the target image on.
-      DisplaySize           640      480
+   // Window colors. RGB,A
+   ForeColor              255     255    255    255
+   BackColor              0       0      0      255
 
-      // Start point of the display.
-      DisplayStartXY        0        0
-      DisplayStartXY        0        0
-    
-      // Size of the window image within the display.
-      WindowSize            640      480
-     
-      // Window offsets within the display.
-      WindowOffsetXY        0         0
-     
-      // Time to wait for display to settle.
-      WaitKeyTime            100
-      DisplaySettleTime      100
+   // PNG image filenames.
+   ImageFilename0         Image3840_0.png
+   ImageFilename1         Image3840_1.png
+   
+   // Target test variables.
+   SideX                  80
+   SideY                  60
 
-      // Enable the display.
-      EnableFlag            true
-   }
+   // Timer thread period milliseconds.
+   TimerThreadPeriod      250
+   TimerThreadPeriod      500
+   
+   // If not zero then the draw latency is printed.
+   ShowCode               1
+   
+   // Thread services print and log levels.
+   PrintLevel             0 3
 
-   //***************************************************************************
-   //***************************************************************************
-   //***************************************************************************
+SectionEnd
 
-   CaptureWindow
-   {
-      // Size of the display to show the capture image on.
-      DisplaySize           1920   1080
+//********************************************************************
+//********************************************************************
+//********************************************************************
 
-      // Start point of the display.
-      DisplayStartXY        3300   0
+SectionBegin Default3840
 
-      // Size of the window image within the display.
-      WindowSize            1224    1024
-     
-      // Window offsets within the display.
-      WindowOffsetXY        0         0
-     
-      // Time to wait for display to settle.
-      WaitKeyTime           100
-      DisplaySettleTime     100
+   //*****************************************************************
+   //*****************************************************************
+   //*****************************************************************
+   
+   // Window width and height.
+   WindowWidthHeight      1920   1080
+   WindowWidthHeight      3840   2160
 
-      // Enable the display.
-      EnableFlag            false
-   }
+   // Window colors. RGB,A
+   ForeColor              255     255    255    255
+   BackColor              0       0      0      255
 
+   // PBG image filenames.
+   ImageFilename0         Image1920_0.png
+   ImageFilename1         Image1920_1.png
+   ImageFilename0         Image3840_0.png
+   ImageFilename1         Image3840_1.png
+   
+   // Target test variables.
+   SideX                  80
+   SideY                  60
 
+   // Timer thread period milliseconds.
+   TimerThreadPeriod      100
+   
 SectionEnd
 
