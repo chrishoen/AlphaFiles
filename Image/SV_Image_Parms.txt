@@ -15,7 +15,7 @@ SectionBegin Default
    RoiB                  75
    
    // Image filter parms.
-   ImageFilterParms      GaussBlur1
+   FilterParms           GaussBlur1
    
 SectionEnd
 
@@ -25,6 +25,7 @@ SectionEnd
 
 SectionBegin GaussBlur1
 
+   FilterType            GaussBlur
    GaussBlurCode         5
    
 SectionEnd
