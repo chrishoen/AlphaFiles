@@ -11,10 +11,10 @@ SectionBegin Default
    // Image generator.
 
    // Image point
-   ImageGenParms         ImageGenSquare1
    ImageGenParms         ImageGenImpulse1
    ImageGenParms         ImageGenGaussian1
    ImageGenParms         ImageGenCircle1
+   ImageGenParms         ImageGenSquare1
 
    // Random noise.
    NoiseSigma            0.0
