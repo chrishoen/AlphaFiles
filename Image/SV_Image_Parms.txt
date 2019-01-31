@@ -1,0 +1,16 @@
+//********************************************************************
+//********************************************************************
+//********************************************************************
+
+SectionBegin Default
+
+   // Image file names.
+   ImageFilename1        Image1.png
+   ImageFilename2        Image2.png
+   
+   // Region of interest variables.
+   RoiPixel              200   250               
+   RoiB                  75 
+   
+SectionEnd
+

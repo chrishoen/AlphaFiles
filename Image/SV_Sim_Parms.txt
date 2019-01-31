@@ -16,13 +16,6 @@ SectionBegin Default
    ImageGenParms         ImageGenGaussian1
    ImageGenParms         ImageGenCircle1
 
-   // Image point
-   CenterPixel           100      200
-
-   // Image file name.
-   ImageFilename1        SimImage1.png
-   ImageFilename2        SimImage2.png
-   
    // Random noise.
    NoiseSigma            0.0
 
