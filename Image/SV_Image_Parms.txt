@@ -6,16 +6,15 @@ SectionBegin Default
 
    // Image file names.
    InputImageFilename    InputImage.png
-   InputRoiFilename      InputRoi.png
    OutputImageFilename   OutputImage.png
-   OutputRoiFilename     OutputRoi.png
    
    // Region of interest variables.
-   RoiPixel              250   200
-   RoiB                  75
+   RoiPixel              250   250
+   RoiB                  3
    
    // Image filter parms.
    FilterParms           GaussBlur1
+   FilterParms           Character1
    
 SectionEnd
 
@@ -27,6 +26,13 @@ SectionBegin GaussBlur1
 
    FilterType            GaussBlur
    GaussBlurCode         5
+   
+SectionEnd
+
+SectionBegin Character1
+
+   FilterType            Character
+   CharacterCode         1
    
 SectionEnd
 
