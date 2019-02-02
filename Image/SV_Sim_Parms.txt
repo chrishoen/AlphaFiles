@@ -8,7 +8,7 @@
 SectionBegin Default
 
    // Image generator.
-   ImageGenParms         Polygon1
+   ImageGenParms         Polygon2
 
    // Random noise.
    NoiseSigma            0.0
@@ -71,6 +71,21 @@ SectionBegin Polygon1
 
    RoiPixel              210    300
    RoiB                  3
+SectionEnd
+
+
+SectionBegin Polygon2
+   ImageType             Polygon
+
+   PolygonPoints
+   {
+      100    100
+      200    300
+      300    100
+   }
+
+   RoiPixel              200    300
+   RoiB                  5
 SectionEnd
 
 
