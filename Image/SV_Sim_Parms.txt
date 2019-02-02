@@ -7,14 +7,8 @@
 
 SectionBegin Default
 
-   //*****************************************************************
    // Image generator.
-
-   // Image point
-   ImageGenParms         ImageGenImpulse1
-   ImageGenParms         ImageGenGaussian1
-   ImageGenParms         ImageGenCircle1
-   ImageGenParms         ImageGenSquare1
+   ImageGenParms         Polygon1
 
    // Random noise.
    NoiseSigma            0.0
@@ -26,23 +20,58 @@ SectionEnd
 //********************************************************************
 // Image generator parameters.
 
-SectionBegin ImageGenCircle1
+SectionBegin Circle1
    ImageType             Circle
    ImageB                50
+
+   RoiPixel              250   250
+   RoiB                  3
 SectionEnd
 
-SectionBegin ImageGenSquare1
+SectionBegin Square1
    ImageType             Square
    ImageB                50
+   
+   RoiPixel              250   250
+   RoiB                  3
 SectionEnd
 
-SectionBegin ImageGenImpulse1
+SectionBegin Impulse1
    ImageType             Impulse
+
+   RoiPixel              200   200
+   RoiB                  3
 SectionEnd
 
-SectionBegin ImageGenGaussian1
+SectionBegin Gaussian1
    ImageType             Gaussian
    ImageB                100
    GaussianWidth         20.0
    GaussianAmplitude     100.0
+
+   RoiPixel              200   200
+   RoiB                  3
 SectionEnd
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Image generator parameters.
+
+SectionBegin Polygon1
+   ImageType             Polygon
+
+   PolygonPoints
+   {
+      200    100
+      200    300
+      210    300
+      210    100
+   }
+
+   RoiPixel              210    300
+   RoiB                  3
+SectionEnd
+
+
+

@@ -4,11 +4,12 @@
 
 SectionBegin Default
 
+   // Display number, usually 1.
+   DisplayEnable          true
+   DisplayNum             -1
+
    // Size of the window.
    WindowWidthHeight      400    400
-
-   // Display number, usually 1.
-   Display               -1
 
    // Window colors. RGB,A
    ForeColor              255     255    255    255

@@ -12,7 +12,7 @@ SectionBegin Default
    RoiPixel              250   250
    RoiB                  3
    
-   // Image filter parms.
+   // Image filter variables.
    FilterParms           GaussBlur1
    FilterParms           Character1
    
@@ -32,7 +32,7 @@ SectionEnd
 SectionBegin Character1
 
    FilterType            Character
-   CharacterCode         1
+   CharacterCode         0
    
 SectionEnd
 
