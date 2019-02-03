@@ -13,8 +13,8 @@ SectionBegin Default
    RoiB                  3
    
    // Image filter variables.
-   FilterParms           GaussBlur1
    FilterParms           Character1
+   FilterParms           GaussBlur1
    
 SectionEnd
 
@@ -25,7 +25,7 @@ SectionEnd
 SectionBegin GaussBlur1
 
    FilterType            GaussBlur
-   GaussBlurCode         5
+   GaussBlurCode         3
    
 SectionEnd
 
