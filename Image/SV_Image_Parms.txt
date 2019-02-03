@@ -36,7 +36,7 @@ SectionEnd
 SectionBegin Character1
 
    FilterType            Character
-   CharacterCode         2
+   CharacterCode         1
    
    CharacterTable1
    {
