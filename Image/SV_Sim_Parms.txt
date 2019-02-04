@@ -8,7 +8,7 @@
 SectionBegin Default
 
    // Image generator.
-   ImageGenParms         Polygon3
+   ImageGenParms         Polygon4
 
    // Random noise.
    NoiseSigma            0.0
@@ -22,24 +22,24 @@ SectionEnd
 
 SectionBegin Circle1
    ImageType             Circle
-   ImageB                50
+   ImageB                200
 
-   RoiPixel              250   250
+   RoiPixel              270   680
    RoiB                  3
 SectionEnd
 
 SectionBegin Square1
    ImageType             Square
-   ImageB                50
+   ImageB                200
    
-   RoiPixel              250   250
+   RoiPixel              470   680
    RoiB                  3
 SectionEnd
 
 SectionBegin Impulse1
    ImageType             Impulse
 
-   RoiPixel              200   200
+   RoiPixel              270  480
    RoiB                  3
 SectionEnd
 
@@ -49,7 +49,7 @@ SectionBegin Gaussian1
    GaussianWidth         20.0
    GaussianAmplitude     100.0
 
-   RoiPixel              200   200
+   RoiPixel              270  480
    RoiB                  3
 SectionEnd
 
@@ -63,14 +63,14 @@ SectionBegin Polygon1
 
    PolygonPoints
    {
-      200    100
-      200    300
-      210    300
-      210    100
+      135    240
+      135    720
+      405    720
+      405    240
    }
 
-   RoiPixel              210    300
-   RoiB                  3
+   RoiPixel              405    720
+   RoiB                  5
 SectionEnd
 
 
@@ -79,12 +79,12 @@ SectionBegin Polygon2
 
    PolygonPoints
    {
-      100    100
-      200    300
-      300    100
+      135    240
+      270    720
+      405    240
    }
 
-   RoiPixel              200    300
+   RoiPixel              270    720
    RoiB                  5
 SectionEnd
 
@@ -93,16 +93,14 @@ SectionBegin Polygon3
 
    PolygonPoints
    {
-      100    100
-      100    300
-      200    200
-      300    300
-      300    100
+      135    240
+      135    720
+      270    480
+      405    720
+      405    240
    }
 
-   RoiPixel              200    205
-   RoiPixel              150    250
-   RoiPixel              100    300
+   RoiPixel              270    480
    RoiB                  5
 SectionEnd
 
@@ -112,16 +110,14 @@ SectionBegin Polygon4
 
    PolygonPoints
    {
-      100    100
-      100    300
-      150    300
-      200    200
-      250    300
-      300    300
-      300    100
+      135    240
+      135    480
+      270    720
+      405    480
+      405    240
    }
 
-   RoiPixel              200    205
+   RoiPixel              270    720
    RoiB                  5
 SectionEnd
 
