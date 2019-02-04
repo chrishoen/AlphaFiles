@@ -14,8 +14,8 @@ SectionBegin Default
    RoiB                  3
    
    // Image filter variables.
-   FilterParms           GaussBlur1
    FilterParms           Classify1
+   FilterParms           GaussBlur1
    
 SectionEnd
 
@@ -25,8 +25,11 @@ SectionEnd
 
 SectionBegin GaussBlur1
 
-   FilterType            Classify1
+   FilterType            GaussBlur
    GaussBlurCode         3
+   GaussBlurSigma        0.5
+   GaussBlurSigma        0.8
+   GaussBlurSigma        0.0
    
 SectionEnd
 

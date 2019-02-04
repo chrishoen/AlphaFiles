@@ -8,7 +8,7 @@
 SectionBegin Default
 
    // Image generator.
-   ImageGenParms         Polygon4
+   ImageGenParms         Polygon1
 
    // Random noise.
    NoiseSigma            0.0
