@@ -14,8 +14,17 @@ SectionBegin Default
    RoiB                  3
    
    // Image filter variables.
-   FilterParms           Classify1
-   FilterParms           GaussBlur1
+   FilterParms           Contour1
+   
+SectionEnd
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+
+SectionBegin Contour1
+
+   FilterType            Contour
    
 SectionEnd
 

@@ -41,6 +41,21 @@ SectionBegin Default
       1030.4   1031.4
    }
 
+   BoolTable1d
+   {
+      true
+      false
+      false
+      true
+   }
+
+   BoolTable2d
+   {
+      x . . 
+      . x .
+      . . x
+   }
+
    Code2     902
 
 SectionEnd
