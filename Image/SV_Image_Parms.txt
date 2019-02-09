@@ -14,7 +14,7 @@ SectionBegin Default
    RoiB                  3
    
    // Image filter variables.
-   FilterParms           Contour1
+   ContourFilterParms    ContourFilter1
    
 SectionEnd
 
@@ -22,45 +22,14 @@ SectionEnd
 //********************************************************************
 //********************************************************************
 
-SectionBegin Contour1
+SectionBegin ContourFilter1
 
-   FilterType            Contour
-   
-SectionEnd
-
-//********************************************************************
-//********************************************************************
-//********************************************************************
-
-SectionBegin GaussBlur1
-
-   FilterType            GaussBlur
-   GaussBlurCode         3
-   GaussBlurSigma        0.5
-   GaussBlurSigma        0.8
-   GaussBlurSigma        0.0
-   
-SectionEnd
-
-//********************************************************************
-//********************************************************************
-//********************************************************************
-
-SectionBegin Classify1
-
-   FilterType            Classify
    ClassifyCode          1
    
    ClassifyTable1
    {
       0   1   2   3   4   5   6   7   8
     200 201 202 203 204 205 206 207 208
-   }
-  
-   ClassifyTable2
-   {
-      0  16   32  56  64  64 128 128 128
-    128 128 128 128 192 192 192 192 255
    }
    
 SectionEnd
