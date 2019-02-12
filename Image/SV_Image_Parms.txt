@@ -14,7 +14,22 @@ SectionBegin Default
    RoiB                  3
    
    // Image filter variables.
+   NNRuleFilterParms     NNRuleFilter1
+   
+   // Image filter variables.
    ContourFilterParms    ContourFilter1
+   
+SectionEnd
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+
+SectionBegin NNRuleFilter1
+
+   ClassifyCode          1
+   HC1                   0xa
+   HC2                   0xb
    
 SectionEnd
 
