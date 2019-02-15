@@ -1,0 +1,12 @@
+//********************************************************************
+//********************************************************************
+//********************************************************************
+
+SectionBegin Default
+
+   // Parms files.
+   SimParmsFilename      Image/SV_Sim_Parms_3d_bm.txt
+   ImageParmsFilename    Image/SV_Image_Parms.txt
+   
+SectionEnd
+

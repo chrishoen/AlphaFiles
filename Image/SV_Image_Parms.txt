@@ -5,16 +5,20 @@
 SectionBegin Default
 
    // Image file names.
-   InputImageFilename    InputImage.png
+   InputImageCFilename   InputImage.png
    OutputImageFilename   OutputImage.png
    TestImageFilename     Mango3d0078.png
+   
+   InputImageCFilename   dodecagon1.png
+   OutputImageFilename   dodecagon1F.png
    
    // Region of interest variables.
    RoiPixel              250   250
    RoiB                  3
    
    // Image filter variables.
-   NNRuleFilterParms     NNRuleFilter1
+   NN2dRuleFilterParms   NN2dRuleFilter1
+   NN3dRuleFilterParms   NN3dRuleFilter1
    
    // Image filter variables.
    ContourFilterParms    ContourFilter1
@@ -25,11 +29,29 @@ SectionEnd
 //********************************************************************
 //********************************************************************
 
-SectionBegin NNRuleFilter1
+SectionBegin NN2dRuleFilter1
 
    ClassifyCode          1
-   HC1                   0xa
-   HC2                   0xb
+   HC1                   0xc
+   HC2                   0xd
+   
+   HC1                   0xff
+   HC2                   0x80
+   
+SectionEnd
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+
+SectionBegin NN3dRuleFilter1
+
+   ClassifyCode          1
+   HC1                   0xc
+   HC2                   0xd
+   
+   HC1                   0xff
+   HC2                   0x80
    
 SectionEnd
 

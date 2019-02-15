@@ -12,6 +12,7 @@ SectionBegin Default
 
    // Image size.
    ImageSize                540      960
+   ImageSize                2160     3840
    
    // Pixel variables.
    ImagePixelPitch          0.00345
