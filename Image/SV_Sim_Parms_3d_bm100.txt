@@ -21,7 +21,7 @@ SectionBegin BitMapD1
 
    BitMapCorner          100    200
    RoiPixel              104    204
-   RoiB                  4
+   RoiB                  5
 
    BitMap
    {
@@ -50,7 +50,7 @@ SectionBegin BitMapC1
 
    BitMapCorner          100    200
    RoiPixel              104    204
-   RoiB                  4
+   RoiB                  5
 
    BitMap
    {
@@ -78,7 +78,7 @@ SectionBegin BitMapU1
 
    BitMapCorner          100    200
    RoiPixel              104    204
-   RoiB                  4
+   RoiB                  5
 
    BitMap
    {
