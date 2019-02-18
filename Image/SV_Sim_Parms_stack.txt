@@ -5,24 +5,10 @@
 SectionBegin Default
 
    // Simulated image stack.
-   StackName             MyImage 
-   StackSize             100
+   StackName             MyImageA 
+   StackSize             1
    
-   StackPolygonBottom
-   {
-        580  1420
-        580  2420
-       1580  2420
-       1580  1420
-   }
-   
-   StackPolygonDelta
-   {
-          1    0
-          1    0
-          0    0
-          0    0
-   }
+   ImageGenParmsC        BitMap1
    
 SectionEnd
 
@@ -31,86 +17,23 @@ SectionEnd
 //********************************************************************
 // Image generator parameters.
 
-SectionBegin BitMapD1
+SectionBegin BitMap1
    ImageType             BitMap
 
-   BitMapCorner          100    200
-   RoiPixel              104    204
+   BitMapCorner          1078   1918
+   RoiPixel              1080   1920
    RoiB                  5
 
    BitMap
    {
-      . . . . . . . . .   // 0 100
-      . x x x x x x x .   // 1
-      . x x x x x x x .   // 2
-      . x x x x x x x .   // 3
-      . x x x x x x x .   // 4
-      . x x x x x x x .   // 5
-      . x x x x x x x .   // 6
-      . x x x x x x x .   // 7
-      . . . . . . . . .   // 8
-//200 0 1 2 3 4 5 6 7 8
+         . . . . .   // 0 1078
+         . . . . .   // 1
+         . . x . .   // 2
+         . . . . .   // 3
+         . . . . .   // 4
+//1918   0 1 2 3 4
    }
 
 SectionEnd
-
-
-//********************************************************************
-//********************************************************************
-//********************************************************************
-// Image generator parameters.
-
-SectionBegin BitMapC1
-   ImageType             BitMap
-
-   BitMapCorner          100    200
-   RoiPixel              104    204
-   RoiB                  5
-
-   BitMap
-   {
-      . . . . . . . . .   // 0 100
-      . . x x x x x x .   // 1
-      . x x x x x x x .   // 2
-      . x x x x x x x .   // 3
-      . x x x x x x x .   // 4
-      . x x x x x x x .   // 5
-      . x x x x x x x .   // 6
-      . x x x x x x x .   // 7
-      . . . . . . . . .   // 8
-//200 0 1 2 3 4 5 6 7 8
-   }
-
-SectionEnd
-
-//********************************************************************
-//********************************************************************
-//********************************************************************
-// Image generator parameters.
-
-SectionBegin BitMapU1
-   ImageType             BitMap
-
-   BitMapCorner          100    200
-   RoiPixel              104    204
-   RoiB                  5
-
-   BitMap
-   {
-      . . . . . . . . .   // 0 100
-      . . . x x x x x .   // 1
-      . . x x x x x x .   // 2
-      . x x x x x x x .   // 3
-      . x x x x x x x .   // 4
-      . x x x x x x x .   // 5
-      . x x x x x x x .   // 6
-      . x x x x x x x .   // 7
-      . . . . . . . . .   // 8
-//200 0 1 2 3 4 5 6 7 8
-   }
-
-SectionEnd
-
-
 
 
