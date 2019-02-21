@@ -5,10 +5,10 @@
 SectionBegin Default
 
    // Simulated image stack.
-   StackName             MyImageA 
-   StackSize             1
+   StackName             MyStack 
+   StackSize             10
    
-   ImageGenParmsC        BitMap1
+   StackMorphParms       Morph1
    
 SectionEnd
 
@@ -17,22 +17,9 @@ SectionEnd
 //********************************************************************
 // Image generator parameters.
 
-SectionBegin BitMap1
-   ImageType             BitMap
+SectionBegin Morph1
 
-   BitMapCorner          1078   1918
-   RoiPixel              1080   1920
-   RoiB                  5
-
-   BitMap
-   {
-         . . . . .   // 0 1078
-         . . . . .   // 1
-         . . x . .   // 2
-         . . . . .   // 3
-         . . . . .   // 4
-//1918   0 1 2 3 4
-   }
+   Delta                 1      3
 
 SectionEnd
 
