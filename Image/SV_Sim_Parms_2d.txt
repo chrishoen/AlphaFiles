@@ -8,8 +8,8 @@
 SectionBegin Default
 
    // Image generator.
-   ImageGenParmsC        BitMap25
-   ImageGenParmsC        Dodecagon1
+   ImageGenParmsS2       BitMap25
+   ImageGenParmsS2       Dodecagon1
    
 
    // Random noise.

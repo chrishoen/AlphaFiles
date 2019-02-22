@@ -5,9 +5,9 @@
 SectionBegin Default
 
    // Image generator.
-   ImageGenParmsD        BitMapD1
-   ImageGenParmsC        BitMapC1
-   ImageGenParmsU        BitMapU1
+   ImageGenParmsS1       BitMapS1
+   ImageGenParmsS2       BitMapS2
+   ImageGenParmsS3       BitMapS3
 
 SectionEnd
 
@@ -16,7 +16,7 @@ SectionEnd
 //********************************************************************
 // Image generator parameters.
 
-SectionBegin BitMapD1
+SectionBegin BitMapS1
    ImageType             BitMap
 
    BitMapCorner          100    200
@@ -45,7 +45,7 @@ SectionEnd
 //********************************************************************
 // Image generator parameters.
 
-SectionBegin BitMapC1
+SectionBegin BitMapS2
    ImageType             BitMap
 
    BitMapCorner          100    200
@@ -73,7 +73,7 @@ SectionEnd
 //********************************************************************
 // Image generator parameters.
 
-SectionBegin BitMapU1
+SectionBegin BitMapS3
    ImageType             BitMap
 
    BitMapCorner          100    200

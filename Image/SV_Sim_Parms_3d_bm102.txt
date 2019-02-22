@@ -5,9 +5,9 @@
 SectionBegin Default
 
    // Image generator.
-   ImageGenParmsD        BitMapD1
-   ImageGenParmsC        BitMapC1
-   ImageGenParmsU        BitMapU1
+   ImageGenParmsS1       BitMapS1
+   ImageGenParmsS2       BitMapS2
+   ImageGenParmsS3       BitMapS3
 
 SectionEnd
 
@@ -16,7 +16,7 @@ SectionEnd
 //********************************************************************
 // Image generator parameters.
 
-SectionBegin BitMapD1
+SectionBegin BitMapS1
    ImageType             BitMap
 
    BitMapCorner          100    200
@@ -26,26 +26,25 @@ SectionBegin BitMapD1
    BitMap
    {
       . . . . . . . . .   // 0 100
-      . . . x x x x x .   // 1
-      . . . x x x x x .   // 2
-      . . . x x x x x .   // 3
-      . . . x x x x x .   // 4
-      . . . x x x x x .   // 5
-      . . . x x x x x .   // 6
-      . . . x x x x x .   // 7
+      . . . . . x x x .   // 1
+      . . . . . x x x .   // 2
+      . . . . . x x x .   // 3
+      . . . . . x x x .   // 4
+      . . . . . x x x .   // 5
+      . . . . . x x x .   // 6
+      . . . . . x x x .   // 7
       . . . . . . . . .   // 8
 //200 0 1 2 3 4 5 6 7 8
    }
 
 SectionEnd
 
-
 //********************************************************************
 //********************************************************************
 //********************************************************************
 // Image generator parameters.
 
-SectionBegin BitMapC1
+SectionBegin BitMapS2
    ImageType             BitMap
 
    BitMapCorner          100    200
@@ -73,7 +72,7 @@ SectionEnd
 //********************************************************************
 // Image generator parameters.
 
-SectionBegin BitMapU1
+SectionBegin BitMapS3
    ImageType             BitMap
 
    BitMapCorner          100    200
@@ -83,13 +82,13 @@ SectionBegin BitMapU1
    BitMap
    {
       . . . . . . . . .   // 0 100
-      . . . . . x x x .   // 1
-      . . . . . x x x .   // 2
-      . . . . . x x x .   // 3
-      . . . . . x x x .   // 4
-      . . . . . x x x .   // 5
-      . . . . . x x x .   // 6
-      . . . . . x x x .   // 7
+      . . . x x x x x .   // 1
+      . . . x x x x x .   // 2
+      . . . x x x x x .   // 3
+      . . . x x x x x .   // 4
+      . . . x x x x x .   // 5
+      . . . x x x x x .   // 6
+      . . . x x x x x .   // 7
       . . . . . . . . .   // 8
 //200 0 1 2 3 4 5 6 7 8
    }
