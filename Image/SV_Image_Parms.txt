@@ -15,7 +15,7 @@ SectionBegin Default
    // Region of interest variables.
    RoiPixel              250   250
    RoiB                  3
-   RoiCode               1
+   RoiHeaderCode         1
    
    // Image filter variables.
    NN2dRuleFilterParms   NN2dRuleFilter1
