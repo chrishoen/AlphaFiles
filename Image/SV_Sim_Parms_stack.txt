@@ -5,10 +5,8 @@
 SectionBegin Default
 
    // Simulated image stack.
-   StackName             MyStack 
-   StackSize             10
-   
-   StackMorphParms       Morph1
+   StackName             MyStack
+   StackMorphParmsA      Morph1
    
 SectionEnd
 
@@ -19,13 +17,52 @@ SectionEnd
 
 SectionBegin Morph1
 
+   GenerateFirst       true
+   WriteFirst          true
+   
+   RepeatNum             10
+   MorphNum              1
+   WriteNum              1
+   
    Mode                  1  
    Delta                 1      1
 
 SectionEnd
 
 
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Image generator parameters.
+
+SectionBegin MorphCube
+
+   GenerateFirst       true
+   WriteFirst          true
+   
+   RepeatNum             1
+   MorphNum              20
+   WriteNum              20
+   
+   Mode                  1  
+   Delta                 1      1
+
+SectionEnd
+
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Image generator parameters.
+
 SectionBegin Morph2
+
+   GenerateFirst       true
+   WriteFirst          true
+   
+   RepeatNum             10
+   MorphNum              1
+   WriteNum              1
 
    Mode                  2  
    Delta                 1      3
