@@ -20,7 +20,7 @@ SectionBegin Morph1
    GenerateFirst       true
    WriteFirst          true
    
-   RepeatNum             20
+   RepeatNum             10
    MorphNum              1
    WriteNum              1
    
@@ -68,7 +68,7 @@ SectionBegin Morph2
 
    Mode                  Diamond
    AddFlag               true
-   Delta                 1      3
+   Delta                 1     3      
 
 SectionEnd
 

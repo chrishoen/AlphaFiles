@@ -1,0 +1,97 @@
+//********************************************************************
+//********************************************************************
+//********************************************************************
+
+SectionBegin Default
+
+   // Simulated image stack.
+   StackName             MyStack
+   StackMorphParmsA      MorphAddDiamond
+   StackMorphParmsB      MorphSubDiamond
+   
+SectionEnd
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Image generator parameters.
+
+SectionBegin MorphAddSquare
+
+   GenerateFirst       true
+   WriteFirst          true
+   
+   RepeatNum             100
+   MorphNum              1
+   WriteNum              1
+   
+   Mode                  Square
+   AddFlag               true
+   Delta                 1      2
+
+SectionEnd
+
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Image generator parameters.
+
+SectionBegin MorphSubSquare
+
+   GenerateFirst       false
+   WriteFirst          false
+   
+   RepeatNum             100
+   MorphNum              1
+   WriteNum              1
+   
+   Mode                  Square
+   AddFlag               false
+   Delta                 1      2
+
+SectionEnd
+
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Image generator parameters.
+
+SectionBegin MorphAddDiamond
+
+   GenerateFirst       true
+   WriteFirst          true
+   
+   RepeatNum             100
+   MorphNum              1
+   WriteNum              1
+   
+   Mode                  Diamond
+   AddFlag               true
+   Delta                 1      2
+
+SectionEnd
+
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Image generator parameters.
+
+SectionBegin MorphSubDiamond
+
+   GenerateFirst       false
+   WriteFirst          false
+   
+   RepeatNum             100
+   MorphNum              1
+   WriteNum              1
+   
+   Mode                  Diamond
+   AddFlag               false
+   Delta                 1      2
+
+SectionEnd
+
+
