@@ -5,7 +5,7 @@
 SectionBegin Default
 
    // Display number, usually 1.
-   DisplayEnable          false
+   DisplayEnable          true
    DisplayNum             -1
 
    // Size of the window.

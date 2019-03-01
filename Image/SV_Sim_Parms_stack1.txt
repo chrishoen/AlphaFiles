@@ -6,7 +6,7 @@ SectionBegin Default
 
    // Simulated image stack.
    StackName             MyStack
-   StackMorphParmsA      Morph1
+   StackMorphParmsA      MorphDiamond
    
 SectionEnd
 
@@ -15,7 +15,7 @@ SectionEnd
 //********************************************************************
 // Image generator parameters.
 
-SectionBegin Morph1
+SectionBegin MorphSquare
 
    GenerateFirst       true
    WriteFirst          true
@@ -57,7 +57,7 @@ SectionEnd
 //********************************************************************
 // Image generator parameters.
 
-SectionBegin Morph2
+SectionBegin MorphDiamond
 
    GenerateFirst       true
    WriteFirst          true
