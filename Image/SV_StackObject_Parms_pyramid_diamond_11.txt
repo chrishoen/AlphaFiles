@@ -1,0 +1,32 @@
+//********************************************************************
+//********************************************************************
+//********************************************************************
+
+SectionBegin Default
+
+   // Simulated image stack object.
+   StackMorphParmsA      MorphDiamond
+   
+SectionEnd
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Image generator parameters.
+
+SectionBegin MorphDiamond
+
+   GenerateFirst       true
+   WriteFirst          true
+   
+   RepeatNum             10
+   MorphNum              1
+   WriteNum              1
+
+   Mode                  Diamond
+   AddFlag               true
+   Delta                 1     3      
+
+SectionEnd
+
+

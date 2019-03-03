@@ -1,0 +1,19 @@
+//********************************************************************
+//********************************************************************
+//********************************************************************
+
+SectionBegin Default
+
+   // Simulated image stack objects.
+   ObjectFileName1    Image/SV_StackObject_Parms_pyramid_diamond_11.txt
+   
+   // Simulated stack object major row column positioning.
+   MajorSize          2     2
+   Object1Major       0     0
+   Object2Major       0     1
+   Object3Major       1     0
+   Object4Major       1     1
+   
+   
+SectionEnd
+
