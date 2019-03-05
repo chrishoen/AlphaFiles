@@ -1,0 +1,76 @@
+//********************************************************************
+//********************************************************************
+//********************************************************************
+
+SectionBegin Default
+
+   // Simulated image stack.
+   StackName             StackTest
+   StackMorphParmsA      SquarePyramid
+   StackMorphParmsB      Raft1
+   StackMorphParmsC      Raft2
+   
+SectionEnd
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Image generator parameters.
+
+SectionBegin SquarePyramid
+
+   GenerateFirst       true
+   WriteFirst          false
+   
+   RepeatNum             200
+   MorphNum              1
+   WriteNum              1
+   
+   Mode                  Square
+   AddFlag               true
+   Delta                 1      1
+
+SectionEnd
+
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Image generator parameters.
+
+SectionBegin Raft1
+
+   GenerateFirst       true
+   WriteFirst          false
+   
+   RepeatNum             1
+   MorphNum              210
+   WriteNum              1
+   
+   Mode                  Square
+   AddFlag               true
+   Delta                 1      1
+
+SectionEnd
+
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Image generator parameters.
+
+SectionBegin Raft2
+
+   WriteFirst          false
+   
+   RepeatNum             10
+   MorphNum              1
+   WriteNum              4
+   
+   Mode                  Square
+   AddFlag               Sub
+   Delta                 1      1
+
+SectionEnd
+
+

@@ -14,6 +14,23 @@ SectionBegin Default
    Object3Major       1     0
    Object4Major       1     1
    
+   TileParms          SquareTile
    
 SectionEnd
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Tile parameters.
+
+SectionBegin SquareTile
+   
+   Shape                 Square
+
+   RepeatNum             3
+   Delta                 1      3
+
+SectionEnd
+
+
 
