@@ -25,7 +25,7 @@ SectionBegin Default
       2030.4
    }
 
-   IntTable2d
+   IntTable2d22
    {
       1000   //1001
       1010   //1011
@@ -33,6 +33,17 @@ SectionBegin Default
 //    1030   1031
    }
 
+   IntTable2d23
+   {
+      1000 2000  3000
+      1010 2010  3010
+   }
+
+   IntTable2d
+   {
+      1000
+   }
+   
    DoubleTable2d
    {
       1000.1   1001.1
@@ -58,7 +69,22 @@ SectionBegin Default
 
    Code2     902
 
+   StringTable1d
+   {
+      MyString1
+      MyString2
+      MyString3
+      MyString4
+   }
+   
+   // Test table.
+   TestTable
+   {
+      1000 2000  3000
+      1010 2010  3010
+   }
+   
+   
 SectionEnd
 
-EXIT
       

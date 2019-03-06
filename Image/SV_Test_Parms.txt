@@ -23,7 +23,7 @@ SectionBegin SquareTile
    NumCol                1
 
    StepH                 3
-   StepV                 1
+   StepV                 2
 
 SectionEnd
 
