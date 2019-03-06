@@ -5,10 +5,11 @@
 SectionBegin Default
 
    // Parms files.
-   ImageParmsFilename       Image/SV_Image_Parms.txt
-   SimParmsFilename         Image/SV_Sim_Parms_3d_bm100.txt
-   SimParmsFilename         Image/SV_Sim_Parms_stack_test.txt
-   StackParmsFilename       Image/SV_Stack_Parms.txt
+   ImageParmsFileName       Image/SV_Image_Parms.txt
+   TestParmsFileName        Image/SV_Test_Parms.txt
+   SimParmsFileName         Image/SV_Sim_Parms_3d_bm100.txt
+   SimParmsFileName         Image/SV_Sim_Parms_stack_test.txt
+   StackParmsFileName       Image/SV_Stack_Parms.txt
    
 SectionEnd
 
