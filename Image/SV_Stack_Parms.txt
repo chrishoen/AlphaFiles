@@ -12,7 +12,7 @@ SectionBegin Default
    ObjectEnable
    {
       true
-      false
+      true
       false
       false
    }
@@ -21,9 +21,9 @@ SectionBegin Default
    ObjectFileName
    {
       Image/SV_StackObject_Parms_pyramid_square_11.txt
-      MyString2
-      MyString3
-      MyString4
+      Image/SV_StackObject_Parms_pyramid_diamond_11.txt
+      empty
+      empty
    }
    
    // Object row column positioning.
