@@ -7,6 +7,10 @@ SectionBegin Default
    TileParms          DiamondTile
    TileParms          SquareTile
    
+   Corner             100 200
+   Center             102 203
+   
+  
 SectionEnd
 
 //********************************************************************

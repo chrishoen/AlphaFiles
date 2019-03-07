@@ -23,21 +23,10 @@ SectionBegin Default
    }
    
    // Object row column positioning.
-   MajorSize          2     2
-   
-   ObjectMajorTable
+   ObjectLayout
    {
-      0      0
       0      1
-      1      0
-      1      1
-   }
-
-   // Test table.
-   TestTable
-   {
-      1000 2000  3000
-      1010 2010  3010
+      2      3
    }
    
 SectionEnd
