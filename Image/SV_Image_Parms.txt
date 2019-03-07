@@ -15,7 +15,7 @@ SectionBegin Default
    // Region of interest variables.
    RoiPixel              250   250
    RoiPixel              1080  1920
-   RoiB                  15
+   RoiB                  5
    RoiHeaderCode         0
    RoiSelectCode         1
    RoiShowMode           1

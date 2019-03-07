@@ -4,6 +4,10 @@
 
 SectionBegin Default
 
+   // Stack name and size.
+   StackName             MyStack
+   StackSize             10
+
    // Object enable flags.
    ObjectEnable
    {
