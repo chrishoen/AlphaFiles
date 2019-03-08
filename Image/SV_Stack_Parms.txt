@@ -4,10 +4,20 @@
 
 SectionBegin Default
 
+   //*****************************************************************
+   //*****************************************************************
+   //*****************************************************************
+   // Stack
+   
    // Stack name and size.
    StackName             MyStack
    StackSize             10
 
+   //*****************************************************************
+   //*****************************************************************
+   //*****************************************************************
+   // Objects
+   
    // Object enable flags.
    ObjectEnable
    {
@@ -20,8 +30,7 @@ SectionBegin Default
    // Object parameters filenames.
    ObjectFileName
    {
-      Image/SV_StackObject_Parms_raft_1.txt
-//    Image/SV_StackObject_Parms_pyramid_square_11.txt
+      Image/SV_StackObject_Parms_pyramid_square_11.txt
       Image/SV_StackObject_Parms_pyramid_diamond_11.txt
       Image/SV_StackObject_Parms_pyramid_diamond_12.txt
       Image/SV_StackObject_Parms_pyramid_diamond_13.txt
@@ -29,6 +38,37 @@ SectionBegin Default
    
    // Object row column positioning.
    ObjectLayout
+   {
+      0      1
+      2      3
+   }
+   
+
+   //*****************************************************************
+   //*****************************************************************
+   //*****************************************************************
+   // Rafts
+   
+   // Raft enable flags.
+   RaftEnable
+   {
+      true
+      false
+      false
+      false
+   }
+
+   // Raft parameters filenames.
+   RaftFileName
+   {
+      Image/SV_StackObject_Parms_raft_1.txt
+      Image/SV_StackObject_Parms_raft_1.txt
+      Image/SV_StackObject_Parms_raft_1.txt
+      Image/SV_StackObject_Parms_raft_1.txt
+   }
+   
+   // Raft row column positioning.
+   RaftLayout
    {
       0      1
       2      3
