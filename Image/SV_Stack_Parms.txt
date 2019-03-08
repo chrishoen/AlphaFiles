@@ -6,21 +6,22 @@ SectionBegin Default
 
    // Stack name and size.
    StackName             MyStack
-   StackSize             200
+   StackSize             10
 
    // Object enable flags.
    ObjectEnable
    {
       true
-      true
-      true
-      true
+      false
+      false
+      false
    }
 
    // Object parameters filenames.
    ObjectFileName
    {
-      Image/SV_StackObject_Parms_pyramid_square_11.txt
+      Image/SV_StackObject_Parms_raft_1.txt
+//    Image/SV_StackObject_Parms_pyramid_square_11.txt
       Image/SV_StackObject_Parms_pyramid_diamond_11.txt
       Image/SV_StackObject_Parms_pyramid_diamond_12.txt
       Image/SV_StackObject_Parms_pyramid_diamond_13.txt

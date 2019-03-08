@@ -4,11 +4,10 @@
 
 SectionBegin Default
    
-   TileParms          DiamondTile
-   TileParms          SquareTile
+   TileParms          SquareTile2
    
-   Corner             100 200
-   Center             102 203
+   Corner             100  200
+   Center             102  202
    
   
 SectionEnd
@@ -18,19 +17,43 @@ SectionEnd
 //********************************************************************
 // Tile parameters.
 
-SectionBegin SquareTile
+SectionBegin SquareTile1
    
-   Shape                 Square
+   Shape              Square
 
-   NumLoop               0
-   NumRow                1
-   NumCol                1
+   NumLoop            0
+   NumRow             1
+   NumCol             1
 
-   StepH                 3
-   StepV                 2
+   StepL              0
+   StepH              1
+   StepV              1
 
+   Center             1000 2000
+   
 SectionEnd
 
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Tile parameters.
+
+SectionBegin SquareTile2
+   
+   Shape              Square
+
+   NumLoop            0
+   NumRow             1
+   NumCol             1
+
+   StepL              9
+   StepH              -1
+   StepV              1
+
+   Center             1000 2000
+   
+SectionEnd
 
 //********************************************************************
 //********************************************************************
