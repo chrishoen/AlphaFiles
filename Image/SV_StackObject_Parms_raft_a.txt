@@ -5,7 +5,7 @@
 SectionBegin Default
 
    // Object variables.
-   Name                  pyramid_square_11
+   Name                  raft_a
    
    // Tile enable flags.
    TileEnable
@@ -19,7 +19,7 @@ SectionBegin Default
    // Tile height.
    TileHeight
    {
-      100
+      10
       0
       0
       0
@@ -28,28 +28,28 @@ SectionBegin Default
    // Tile parameters sections.
    TileParmSection
    {
-      PyramidSquare
+      RaftA
       empty
       empty
       empty
    }
    
 SectionEnd
-   
+
 //********************************************************************
 //********************************************************************
 //********************************************************************
 // Tile parameters.
 
-SectionBegin PyramidSquare
+SectionBegin RaftA
    
    Shape                 Square
 
-   NumRow                1
+   NumRow                2
    NumCol                1
 
-   StepL                 0
-   StepH                 1
+   StepL                 400
+   StepH                 0
    StepV                 1
    
 SectionEnd

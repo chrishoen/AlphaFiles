@@ -11,7 +11,7 @@ SectionBegin Default
    
    // Stack name and size.
    StackName             MyStack
-   ObjectHeight          20
+   ObjectHeight          100
    RaftHeight            10
 
    //*****************************************************************
@@ -23,26 +23,33 @@ SectionBegin Default
    ObjectEnable
    {
       true
-      false
-      false
-      false
+      true
+      true
+      true
+      true
+      true
+      true
+      true
    }
 
    // Object parameters filenames.
    ObjectFileName
    {
-      Image/SV_StackObject_Parms_test_1.txt
-//    Image/SV_StackObject_Parms_pyramid_square_11.txt
-      Image/SV_StackObject_Parms_pyramid_diamond_11.txt
-      Image/SV_StackObject_Parms_pyramid_diamond_12.txt
-      Image/SV_StackObject_Parms_pyramid_diamond_13.txt
+      Image/SV_StackObject_Parms_pyramid_square_11.txt
+      Image/SV_StackObject_Parms_pyramid_square_11.txt
+      Image/SV_StackObject_Parms_pyramid_square_11.txt
+      Image/SV_StackObject_Parms_pyramid_square_11.txt
+      Image/SV_StackObject_Parms_pyramid_square_11.txt
+      Image/SV_StackObject_Parms_pyramid_square_11.txt
+      Image/SV_StackObject_Parms_pyramid_square_11.txt
+      Image/SV_StackObject_Parms_pyramid_square_11.txt
    }
    
    // Object row column positioning.
    ObjectLayout
    {
-      0      1
-      2      3
+      0      1      2      3
+      4      5      6      7
    }
    
 
@@ -55,25 +62,24 @@ SectionBegin Default
    RaftEnable
    {
       true
-      false
-      false
-      false
+      true
+      true
+      true
    }
 
    // Raft parameters filenames.
    RaftFileName
    {
-      Image/SV_StackObject_Parms_raft_1.txt
-      Image/SV_StackObject_Parms_raft_1.txt
-      Image/SV_StackObject_Parms_raft_1.txt
-      Image/SV_StackObject_Parms_raft_1.txt
+      Image/SV_StackObject_Parms_raft_a.txt
+      Image/SV_StackObject_Parms_raft_a.txt
+      Image/SV_StackObject_Parms_raft_a.txt
+      Image/SV_StackObject_Parms_raft_a.txt
    }
    
    // Raft row column positioning.
    RaftLayout
    {
-      0      1
-      2      3
+      0      1      2      3
    }
    
 SectionEnd
