@@ -4,24 +4,51 @@
 
 SectionBegin Default
 
-   // Simulated image stack object.
-   StackTileParmsA       SquareTile
+   // Object variables.
+   Name                  pyramid_square_11
+   
+   // Tile enable flags.
+   TileEnable
+   {
+      true
+      false
+      false
+      false
+   }
+
+   // Tile height.
+   TileHeight
+   {
+      10
+      0
+      0
+      0
+   }
+
+   // Tile parameters sections.
+   TileParmSection
+   {
+      PyramidSquare
+      empty
+      empty
+      empty
+   }
    
 SectionEnd
-
+   
 //********************************************************************
 //********************************************************************
 //********************************************************************
 // Tile parameters.
 
-SectionBegin SquareTile
+SectionBegin PyramidSquare
    
    Shape                 Square
 
-   NumLoop               5
    NumRow                1
    NumCol                1
 
+   StepL                 0
    StepH                 1
    StepV                 1
    

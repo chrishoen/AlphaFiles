@@ -2,10 +2,35 @@
 //********************************************************************
 //********************************************************************
 
-SectionBegin Default
+   // Object variables.
+   Name                  pyramid_diamond_11
+   
+   // Tile enable flags.
+   TileEnable
+   {
+      true
+      false
+      false
+      false
+   }
 
-   // Simulated image stack object.
-   StackTileParmsA       DiamondTile
+   // Tile height.
+   TileHeight
+   {
+      10
+      0
+      0
+      0
+   }
+
+   // Tile parameters sections.
+   TileParmSection
+   {
+      PyramidDiamond
+      empty
+      empty
+      empty
+   }
    
 SectionEnd
 
@@ -14,14 +39,14 @@ SectionEnd
 //********************************************************************
 // Tile parameters.
 
-SectionBegin DiamondTile
+SectionBegin PyramidDiamond
    
    Shape                 Diamond
 
-   NumLoop               5
    NumRow                1
    NumCol                1
 
+   StepL                 0
    StepH                 1
    StepV                 1
    

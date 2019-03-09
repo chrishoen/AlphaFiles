@@ -5,13 +5,13 @@
 SectionBegin Default
 
    // Object variables.
-   Name                  raft_1
+   Name                  Test_1
    
    // Tile enable flags.
    TileEnable
    {
       true
-      false
+      true
       false
       false
    }
@@ -20,18 +20,18 @@ SectionBegin Default
    TileHeight
    {
       10
-      0
-      0
-      0
+      10
+      10
+      10
    }
 
    // Tile parameters sections.
    TileParmSection
    {
-      RaftA
-      empty
-      empty
-      empty
+      SquarePyramid
+      SquareTower
+      SquareTower
+      SquareTower
    }
    
 SectionEnd
@@ -41,14 +41,32 @@ SectionEnd
 //********************************************************************
 // Tile parameters.
 
-SectionBegin RaftA
+SectionBegin SquarePyramid
    
    Shape                 Square
 
    NumRow                1
    NumCol                1
 
-   StepL                 19
+   StepL                 0
+   StepH                 1
+   StepV                 1
+   
+SectionEnd
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Tile parameters.
+
+SectionBegin SquareTower
+   
+   Shape                 Square
+
+   NumRow                1
+   NumCol                1
+
+   StepL                 9
    StepH                 0
    StepV                 1
    
