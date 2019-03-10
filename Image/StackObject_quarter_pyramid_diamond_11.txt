@@ -19,7 +19,7 @@ SectionBegin Default
    // Tile height.
    TileHeight
    {
-      600
+      300
       100
       0
       0
@@ -66,7 +66,7 @@ SectionBegin TowerQuarterDiamond
    NumRow                1
    NumCol                1
 
-   StepL                 600
+   StepL                 300
    StepH                 0
    StepV                 1
    

@@ -73,10 +73,10 @@ SectionBegin Default
    // Raft parameters filenames.
    RaftFileName
    {
-      Image/StackRaft_double4.txt
-      Image/StackRaft_double4.txt
-      Image/StackRaft_double4.txt
-      Image/StackRaft_double4.txt
+      Image/StackRaft_double34.txt
+      Image/StackRaft_double34.txt
+      Image/StackRaft_double34.txt
+      Image/StackRaft_double34.txt
    }
    
    // Raft row column positioning.

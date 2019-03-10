@@ -11,11 +11,11 @@ SectionBegin Default
    
    // Stack name and size.
    StackName             MyStack
-   ObjectHeight          700
+   ObjectHeight          400
    RaftHeight            50
 
    // Warp rational.
-   Warp                  3/4
+   Warp                  3/8
    
    //***************************************************************
    //*****************************************************************
@@ -73,10 +73,10 @@ SectionBegin Default
    // Raft parameters filenames.
    RaftFileName
    {
-      Image/StackRaft_double4.txt
-      Image/StackRaft_double4.txt
-      Image/StackRaft_double4.txt
-      Image/StackRaft_double4.txt
+      Image/StackRaft_double38.txt
+      Image/StackRaft_double38.txt
+      Image/StackRaft_double38.txt
+      Image/StackRaft_double38.txt
    }
    
    // Raft row column positioning.
