@@ -11,7 +11,7 @@ SectionBegin Default
    TileEnable
    {
       true
-      false
+      true
       false
       false
    }
@@ -19,8 +19,8 @@ SectionBegin Default
    // Tile height.
    TileHeight
    {
-      50
-      0
+      30
+      20
       0
       0
    }
@@ -29,7 +29,7 @@ SectionBegin Default
    TileParmSection
    {
       RaftA
-      empty
+      RaftB
       empty
       empty
    }
@@ -50,6 +50,24 @@ SectionBegin RaftA
 
    StepL                 170
    StepH                 0
+   StepV                 1
+   
+SectionEnd
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Tile parameters.
+
+SectionBegin RaftB
+   
+   Shape                 Square
+
+   NumRow                2
+   NumCol                1
+
+   StepL                 170
+   StepH                 -1
    StepV                 1
    
 SectionEnd

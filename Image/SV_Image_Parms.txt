@@ -50,10 +50,9 @@ SectionEnd
 
 SectionBegin NN3dRuleFilter1
 
-   ClassifyCode          1
-   HC1                   0xc
-   HC2                   0xd
+   FullFlag              false
    
+   ClassifyCode          1
    HC1                   0x80
    HC2                   0x80
    
