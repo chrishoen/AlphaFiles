@@ -4,7 +4,7 @@
 
 SectionBegin Default
    
-   TileParms          SquareTile2
+   TileParms          SquareTile1
    
    Corner             100  200
    Center             102  202
@@ -21,7 +21,7 @@ SectionBegin SquareTile1
    
    Shape              Square
 
-   NumLoop            0
+   NumLoop            1
    NumRow             1
    NumCol             1
 
@@ -44,7 +44,7 @@ SectionBegin SquareTile2
    
    Shape              Square
 
-   NumLoop            0
+   NumLoop            1
    NumRow             1
    NumCol             1
 
@@ -52,7 +52,7 @@ SectionBegin SquareTile2
    StepH              -1
    StepV              1
 
-   Center             1000 2000
+   Sector             0    0    1000 2000
    
 SectionEnd
 
@@ -63,15 +63,18 @@ SectionEnd
 
 SectionBegin DiamondTile
    
-   Shape                 Diamond
+   Shape              Diamond
 
-   NumLoop               0
-   NumRow                1
-   NumCol                3
+   NumLoop            1
+   NumRow             1
+   NumCol             3
 
-   StepH                 1
-   StepV                 1
+   StepL              0
+   StepH              1
+   StepV              1
 
+   Sector             0    0    1000 2000
+   
 SectionEnd
 
 
