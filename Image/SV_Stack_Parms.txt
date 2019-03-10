@@ -11,8 +11,8 @@ SectionBegin Default
    
    // Stack name and size.
    StackName             MyStack
-   ObjectHeight          100
-   RaftHeight            10
+   ObjectHeight          600
+   RaftHeight            50
 
    // Warp rational.
    Warp                  3/4
@@ -39,13 +39,13 @@ SectionBegin Default
    ObjectFileName
    {
       Image/SV_StackObject_Parms_pyramid_square_11.txt
+      Image/SV_StackObject_Parms_pyramid_diamond_11.txt
+      Image/SV_StackObject_Parms_pyramid_diamond_12.txt
+      Image/SV_StackObject_Parms_pyramid_diamond_13.txt
       Image/SV_StackObject_Parms_pyramid_square_11.txt
-      Image/SV_StackObject_Parms_pyramid_square_11.txt
-      Image/SV_StackObject_Parms_pyramid_square_11.txt
-      Image/SV_StackObject_Parms_pyramid_square_11.txt
-      Image/SV_StackObject_Parms_pyramid_square_11.txt
-      Image/SV_StackObject_Parms_pyramid_square_11.txt
-      Image/SV_StackObject_Parms_pyramid_square_11.txt
+      Image/SV_StackObject_Parms_pyramid_diamond_11.txt
+      Image/SV_StackObject_Parms_pyramid_diamond_12.txt
+      Image/SV_StackObject_Parms_pyramid_diamond_13.txt
    }
    
    // Object row column positioning.

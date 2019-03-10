@@ -2,6 +2,8 @@
 //********************************************************************
 //********************************************************************
 
+SectionBegin Default
+
    // Object variables.
    Name                  pyramid_diamond_12
    
@@ -9,7 +11,7 @@
    TileEnable
    {
       true
-      false
+      true
       false
       false
    }
@@ -17,8 +19,8 @@
    // Tile height.
    TileHeight
    {
-      10
-      0
+      150
+      450
       0
       0
    }
@@ -27,7 +29,7 @@
    TileParmSection
    {
       PyramidDiamond
-      empty
+      TowerDiamond
       empty
       empty
    }
@@ -48,6 +50,24 @@ SectionBegin PyramidDiamond
 
    StepL                 0
    StepH                 1
+   StepV                 1
+   
+SectionEnd
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Tile parameters.
+
+SectionBegin TowerDiamond
+   
+   Shape                 Diamond
+
+   NumRow                1
+   NumCol                2
+
+   StepL                 150
+   StepH                 0
    StepV                 1
    
 SectionEnd

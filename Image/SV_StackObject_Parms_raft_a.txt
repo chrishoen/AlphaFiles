@@ -19,7 +19,7 @@ SectionBegin Default
    // Tile height.
    TileHeight
    {
-      10
+      50
       0
       0
       0
@@ -48,7 +48,7 @@ SectionBegin RaftA
    NumRow                2
    NumCol                1
 
-   StepL                 400
+   StepL                 340
    StepH                 0
    StepV                 1
    
