@@ -11,7 +11,7 @@ SectionBegin Default
    
    // Stack name and size.
    StackName             MyStack
-   ObjectHeight          600
+   ObjectHeight          400
    RaftHeight            50
 
    // Warp rational.
@@ -38,14 +38,14 @@ SectionBegin Default
    // Object parameters filenames.
    ObjectFileName
    {
-      Image/SV_StackObject_Parms_pyramid_square_11.txt
-      Image/SV_StackObject_Parms_pyramid_diamond_11.txt
-      Image/SV_StackObject_Parms_pyramid_diamond_12.txt
-      Image/SV_StackObject_Parms_pyramid_diamond_13.txt
-      Image/SV_StackObject_Parms_pyramid_square_11.txt
-      Image/SV_StackObject_Parms_pyramid_diamond_11.txt
-      Image/SV_StackObject_Parms_pyramid_diamond_12.txt
-      Image/SV_StackObject_Parms_pyramid_diamond_13.txt
+      Image/StackObject_pyramid_square_11.txt
+      Image/StackObject_pyramid_diamond_11.txt
+      Image/StackObject_pyramid_diamond_12.txt
+      Image/StackObject_pyramid_diamond_13.txt
+      Image/StackObject_pyramid_square_11.txt
+      Image/StackObject_pyramid_diamond_11.txt
+      Image/StackObject_pyramid_diamond_12.txt
+      Image/StackObject_pyramid_diamond_13.txt
    }
    
    // Object row column positioning.
@@ -73,10 +73,10 @@ SectionBegin Default
    // Raft parameters filenames.
    RaftFileName
    {
-      Image/SV_StackObject_Parms_raft_a.txt
-      Image/SV_StackObject_Parms_raft_a.txt
-      Image/SV_StackObject_Parms_raft_a.txt
-      Image/SV_StackObject_Parms_raft_a.txt
+      Image/StackRaft_double4.txt
+      Image/StackRaft_double4.txt
+      Image/StackRaft_double4.txt
+      Image/StackRaft_double4.txt
    }
    
    // Raft row column positioning.

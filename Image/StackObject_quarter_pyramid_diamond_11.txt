@@ -1,0 +1,74 @@
+//********************************************************************
+//********************************************************************
+//********************************************************************
+
+SectionBegin Default
+
+   // Object variables.
+   Name                  pyramid_diamond_11
+   
+   // Tile enable flags.
+   TileEnable
+   {
+      true
+      true
+      false
+      false
+   }
+
+   // Tile height.
+   TileHeight
+   {
+      300
+      100
+      0
+      0
+   }
+
+   // Tile parameters sections.
+   TileParmSection
+   {
+      PyramidDiamond
+      TowerDiamond
+      empty
+      empty
+   }
+   
+SectionEnd
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Tile parameters.
+
+SectionBegin PyramidDiamond
+   
+   Shape                 Diamond
+
+   NumRow                1
+   NumCol                1
+
+   StepL                 0
+   StepH                 1
+   StepV                 1
+   
+SectionEnd
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Tile parameters.
+
+SectionBegin TowerDiamond
+   
+   Shape                 Diamond
+
+   NumRow                1
+   NumCol                1
+
+   StepL                 300
+   StepH                 0
+   StepV                 1
+   
+SectionEnd
+

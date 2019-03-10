@@ -4,11 +4,7 @@
 
 SectionBegin Default
    
-   TileParms          SquareTile1
-   
-   Corner             100  200
-   Center             102  202
-   
+   TileParms          QuarterDiamondTile
   
 SectionEnd
 
@@ -29,8 +25,7 @@ SectionBegin SquareTile1
    StepH              1
    StepV              1
 
-   Sector             0    0    1000 2000
-
+   Sector             1000 1000 2000 2000
    
 SectionEnd
 
@@ -52,7 +47,7 @@ SectionBegin SquareTile2
    StepH              -1
    StepV              1
 
-   Sector             0    0    1000 2000
+   Sector             1000 1000 2000 2000
    
 SectionEnd
 
@@ -73,7 +68,51 @@ SectionBegin DiamondTile
    StepH              1
    StepV              1
 
-   Sector             0    0    1000 2000
+   Sector             1000 1000 2000 2000
+   
+SectionEnd
+
+
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Tile parameters.
+
+SectionBegin QuarterSquareTile
+   
+   Shape              QuarterSquare
+
+   NumLoop            1
+   NumRow             1
+   NumCol             1
+
+   StepL              0
+   StepH              1
+   StepV              1
+
+   Sector             1000 1000 2000 2000
+   
+SectionEnd
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Tile parameters.
+
+SectionBegin QuarterDiamondTile
+   
+   Shape              QuarterDiamond
+
+   NumLoop            1
+   NumRow             1
+   NumCol             3
+
+   StepL              0
+   StepH              1
+   StepV              1
+
+   Sector             1000 1000 2000 2000
    
 SectionEnd
 
