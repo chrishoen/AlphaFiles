@@ -29,7 +29,8 @@ SectionBegin SquareTile1
    StepH              1
    StepV              1
 
-   Center             1000 2000
+   Sector             0    0    1000 2000
+
    
 SectionEnd
 
