@@ -9,7 +9,7 @@ SectionBegin Default
    TestParmsFileName        Image/SV_Test_Parms.txt
    SimParmsFileName         Image/SV_Sim_Parms_3d_bm100.txt
    SimParmsFileName         Image/SV_Sim_Parms_stack_test.txt
-   StackParmsFileName       Image/Stack_Parms_1.txt
+   StackParmsFileName       Image/Stack_Parms_1Q.txt
    
 SectionEnd
 

@@ -5,7 +5,7 @@
 SectionBegin Default
 
    // Object variables.
-   Name                  pyramid_diamond_12
+   Name                  quarter_pyramid_diamond_12
    
    // Tile enable flags.
    TileEnable
@@ -19,8 +19,8 @@ SectionBegin Default
    // Tile height.
    TileHeight
    {
-      150
-      250
+      300
+      400
       0
       0
    }
@@ -28,8 +28,8 @@ SectionBegin Default
    // Tile parameters sections.
    TileParmSection
    {
-      PyramidDiamond
-      TowerDiamond
+      PyramidQuarterDiamond
+      TowerQuarterDiamond
       empty
       empty
    }
@@ -41,9 +41,9 @@ SectionEnd
 //********************************************************************
 // Tile parameters.
 
-SectionBegin PyramidDiamond
+SectionBegin PyramidQuarterDiamond
    
-   Shape                 Diamond
+   Shape                 QuarterDiamond
 
    NumRow                1
    NumCol                2
@@ -59,14 +59,14 @@ SectionEnd
 //********************************************************************
 // Tile parameters.
 
-SectionBegin TowerDiamond
+SectionBegin TowerQuarterDiamond
    
-   Shape                 Diamond
+   Shape                 QuarterDiamond
 
    NumRow                1
    NumCol                2
 
-   StepL                 150
+   StepL                 300
    StepH                 0
    StepV                 1
    
