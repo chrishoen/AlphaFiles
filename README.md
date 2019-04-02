@@ -1,9 +1,10 @@
 # AlphaFiles
 ### settings and parameters text files
 
-This repo contains a directory structure of settings and parameters text files that are used by various other repos.
+This repo contains a directory structure of settings and parameters text files that are used by various programs.
 
 For windows, the files are located in C:\Alpha\Files
+
 For linux, the files are located in /opt/alpha/files
 
 This allows parms files to be located in a central location that has a git repo.
