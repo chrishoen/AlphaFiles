@@ -1,2 +1,2 @@
-start "Session" C:\Users\chris\CMakeBuilds\Dev_Image\Session\Session.exe 
+start "Session" C:\Users\chris\CMakeBuilds\Dev_CPrint\Session\Session.exe 
 
