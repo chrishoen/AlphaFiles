@@ -5,6 +5,34 @@
 
    Mode                 3
    Type                22
+   Test                 2
+   NumWriters           1
+
+   NumElements      10000
+
+   SleepLower          50
+   SleepUpper         150
+   WriteLower       20000
+   WriteUpper       60000
+   ReadLower       200000
+   ReadUpper       600000
+   Terminate     10000000
+   Terminate      1000000
+   XLimit              40
+
+   DelayA1            0.2
+   DelayB1            2.0
+   DelayB2            6.0
+
+   EXIT
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// TEST1,1
+
+   Mode                 3
+   Type                22
    Test                 1
    NumWriters           1
 
