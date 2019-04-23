@@ -5,10 +5,10 @@ SectionBegin Default
 
    // Udp ip addresses and ports. The back end receives on
    // input ports and transmits on output ports.
-   BackEndIpAddress          127.0.0.1
-   FrontEndIpAddress         127.0.0.1
    BackEndIpAddress          192.168.1.9
    FrontEndIpAddress         192.168.1.3
+   BackEndIpAddress          127.0.0.1
+   FrontEndIpAddress         127.0.0.1
    
    CommandInputPort          56001
    CommandOutputPort         56002
