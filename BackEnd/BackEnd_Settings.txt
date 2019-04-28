@@ -3,16 +3,12 @@
 //********************************************************************
 SectionBegin Default
 
-   // Udp ip addresses and ports. The back end receives on
-   // input ports and transmits on output ports.
-   BackEndIpAddress          192.168.1.9
+   // Udp ip addresses and receive ports. 
    FrontEndIpAddress         192.168.1.3
-   BackEndIpAddress          127.0.0.1
-   FrontEndIpAddress         127.0.0.1
    
-   CommandInputPort          56001
-   CommandOutputPort         56002
-   StatusOutputPort          56003
+   BackEndControlPort        56001
+   FrontEndControlPort       56002
+   FrontEndIsochPort         56003
    
    // Thread services print and log levels.
    CommandPrintLevel         0 3
@@ -21,4 +17,3 @@ SectionBegin Default
    StatusUdpPrintLevel       0 3
 
 SectionEnd
-
