@@ -12,8 +12,8 @@ SectionBegin Default
    
    // Thread services print and log levels.
    ControlPrintLevel         0 3
-   ControlUdpPrintLevel      0 3
+   ControlUdpPrintLevel      1 3
    IsochPrintLevel           0 3
-   IsochUdpPrintLevel        0 3
+   IsochUdpPrintLevel        1 3
 
 SectionEnd
