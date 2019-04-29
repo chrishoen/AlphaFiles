@@ -11,9 +11,9 @@ SectionBegin Default
    FrontEndIsochPort         56003
    
    // Thread services print and log levels.
-   CommandPrintLevel         0 3
-   CommandUdpPrintLevel      0 3
-   StatusPrintLevel          0 3
-   StatusUdpPrintLevel       0 3
+   ControlPrintLevel         0 3
+   ControlUdpPrintLevel      0 3
+   IsochPrintLevel           0 3
+   IsochUdpPrintLevel        0 3
 
 SectionEnd
