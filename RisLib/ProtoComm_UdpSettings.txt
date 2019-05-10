@@ -16,8 +16,8 @@ SectionBegin UdpPeer1
 
    MyAppNumber                 301
    MyUdpPort                   56001
-   OtherUdpAddress             192.168.1.9
    OtherUdpAddress             127.0.0.1
+   OtherUdpAddress             192.168.1.3
    OtherUdpPort                56002
    
 SectionEnd
@@ -30,8 +30,8 @@ SectionBegin UdpPeer2
    MyAppNumber                 302 
 
    MyUdpPort                   56002
-   OtherUdpAddress             192.168.1.9
    OtherUdpAddress             127.0.0.1
+   OtherUdpAddress             192.168.1.9
    OtherUdpPort                56001
 
 SectionEnd

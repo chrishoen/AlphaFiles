@@ -26,6 +26,7 @@ SectionBegin TcpClient1
 
    MyAppNumber                 201 
    TcpServerAddress            127.0.0.1
+   TcpServerAddress            192.168.1.9
    TcpServerPort               55001
 
 SectionEnd
