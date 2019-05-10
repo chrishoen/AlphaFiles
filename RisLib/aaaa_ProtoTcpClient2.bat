@@ -1,2 +1,1 @@
-start "TcpClient2" C:\Prime\DevelopLib\Dev_RisLib\x64\Release\ProtoTcpClient.exe TcpClient2
-
+start "TcpClient2" C:\Users\chris\CMakeBuilds\Dev_RisLib\ProtoTcpClient\ProtoTcpClient.exe TcpClient2

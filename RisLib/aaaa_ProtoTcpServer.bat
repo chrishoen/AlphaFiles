@@ -1,2 +1,3 @@
-start "TcpServer" C:\Prime\DevelopLib\Dev_RisLib\x64\Release\ProtoTcpServer.exe
+start "TcpServer" C:\Users\chris\CMakeBuilds\Dev_RisLib\ProtoTcpServer\ProtoTcpServer.exe
+
 
