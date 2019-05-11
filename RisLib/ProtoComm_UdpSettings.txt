@@ -4,7 +4,7 @@
 SectionBegin Default
 
    ThreadTimerPeriod           100
-   PrintLevel                  1
+   PrintLevel                  2 0
    NumWords                    1000
 
 SectionEnd
@@ -15,10 +15,19 @@ SectionEnd
 SectionBegin UdpPeer1
 
    MyAppNumber                 301
+   
+   // Receive on this port.
    MyUdpPort                   56001
-   OtherUdpAddress             127.0.0.1
+   
+   // Transmit to this address and port.
    OtherUdpAddress             192.168.1.3
+   OtherUdpAddress             127.0.0.1
    OtherUdpPort                56002
+   
+   // If true then use the first receive from ip address as the
+   // transmit ip address. Don't open the transmit socket until
+   // a message is received.
+   UdpWrapFlag                 true
    
 SectionEnd
 
@@ -30,8 +39,6 @@ SectionBegin UdpPeer2
    MyAppNumber                 302 
 
    MyUdpPort                   56002
-   OtherUdpAddress             127.0.0.1
-   OtherUdpAddress             192.168.1.9
    OtherUdpAddress             tboard_2
    OtherUdpPort                56001
 
