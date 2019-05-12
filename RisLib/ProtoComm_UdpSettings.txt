@@ -39,6 +39,7 @@ SectionBegin UdpPeer2
    MyAppNumber                 302 
 
    MyUdpPort                   56002
+   OtherUdpAddress             127.0.0.1
    OtherUdpAddress             tboard_2
    OtherUdpPort                56001
 

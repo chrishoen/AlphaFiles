@@ -5,6 +5,7 @@ SectionBegin Default
 
    ThreadTimerPeriod           100
    NumWords                    1000
+   PrintLevel                  2 0
 
 SectionEnd
 
@@ -26,8 +27,8 @@ SectionBegin TcpClient1
 
    MyAppNumber                 201 
    TcpServerAddress            192.168.1.9
-   TcpServerAddress            tboard_2
    TcpServerAddress            127.0.0.1
+   TcpServerAddress            tboard_2
    TcpServerPort               55001
 
 SectionEnd
