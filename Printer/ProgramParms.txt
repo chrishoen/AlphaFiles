@@ -15,7 +15,7 @@ SectionBegin Program
    GCodeCommEnable        true
    LcdGraphicsEnable      true
    ControlEnable          true
-   IsochEnable            false
+   IsochEnable            true
 
    // Udp ip addresses and receive ports. The frontend is the user
    // interface and the backend is PrinterExec.
@@ -34,19 +34,24 @@ SectionBegin Program
    
    // Show code.
    ShowCode               0
-   SplashCode             2
+   SplashCode             0
    SliceCode              1
 
    // Wait for this time before each script command execution.
    ScriptThrottle         10 
 
+   // If true then enable print view and initialize it with the
+   // given ip address. Print view routes debug prints from the
+   // backend threads to print view consoles on a host.
+   PrintViewEnable           true
+   PrintViewIPAddress        sms3
+
    // Thread services print and log levels.
    ScriptSeqShortPrintLevel  0 3
    ScriptSeqLongPrintLevel   0 3
    ControlPrintLevel         0 3
-   ControlUdpPrintLevel      1 3
+   ControlUdpPrintLevel      0 3
    IsochPrintLevel           0 3
-   IsochUdpPrintLevel        0 3
    
 SectionEnd
 
@@ -131,6 +136,42 @@ SectionBegin LogFile
    // Thread services print and log levels.
    PrintLevel          0 3
    
+SectionEnd
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+
+SectionBegin BackEnd
+
+   // Udp ip addresses and receive ports. The frontend is the user
+   // interface and the backend is PrinterExec.
+   BackEndControlPort        56001
+   FrontEndControlPort       56002
+   FrontEndIsochPort         56003
+
+   // If true then use the first receive from ip address as the
+   // transmit ip address. Don't open the transmit socket until
+   // a message is received.
+   ControlUdpWrapFlag        true
+
+   // If a keep alive message is not received after this count
+   // then stop sending periodic messages.   
+   ControlKeepAliveCount     10
+
+   // Thread services print and log levels.
+   ControlPrintLevel         0 3
+   ControlUdpPrintLevel      0 3
+   IsochPrintLevel           0 3
+   
+   // Isoch timing parameters.
+   IsochTimerPeriod          12
+   IsochTimerModulo          20
+  
+   // Isoch signal parameters.
+   IsochSignalFreq           0.5
+   IsochSignalAmplitude      100.0
+ 
 SectionEnd
 
 
