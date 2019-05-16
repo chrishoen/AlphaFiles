@@ -1,146 +1,133 @@
 //********************************************************************
 //********************************************************************
 //********************************************************************
-//
+// Main program parameters.
+
 SectionBegin Program
 
    // Thread enable flags.
-   // MessageEnable       -- enable the secondary binary usb channel to the feynman.   
-   // GCodeCommEnable     -- enable the gcode usb to the feynman.
-   // LcdGraphicsEnable   -- enable writing slice png files to the lcd.   
-   // ControlEnable       -- enable the frontend control udp socket.
-   // IsochEnable         -- enable the frontend isochronous udp socket.   
+   // GCodeCommEnable        -- enable the gcode  primary   usb channel to the feynman.
+   // BinaryCommEnable       -- enable the binary secondary usb channel to the feynman.   
+   // LcdGraphicsEnable      -- enable writing slice png files to the lcd.   
+   // ControlEnable          -- enable the frontend control udp socket.
+   // IsochEnable            -- enable the frontend isochronous udp socket.   
    
-   MessageEnable          false
-   GCodeCommEnable        true
-   LcdGraphicsEnable      true
-   ControlEnable          true
-   IsochEnable            true
+   GCodeCommEnable           true
+   BinaryCommEnable          false
+   LcdGraphicsEnable         true
+   ControlEnable             true
+   IsochEnable               true
 
-   // Udp ip addresses and receive ports. The frontend is the user
-   // interface and the backend is PrinterExec.
-   BackEndControlPort        56001
-   FrontEndControlPort       56002
-   FrontEndIsochPort         56003
-
-   // If true then use the first receive from ip address as the
-   // transmit ip address. Don't open the transmit socket until
-   // a message is received.
-   ControlUdpWrapFlag        true
-
-   // If a keep alive message is not received after this count
-   // then stop sending periodic messages.   
-   ControlKeepAliveCount     10
-   
-   // Show code.
-   ShowCode               0
-   SplashCode             0
-   SliceCode              1
+   // Show codes.
+   ShowCode                  0
+   SplashCode                0
+   SliceCode                 1
 
    // Wait for this time before each script command execution.
-   ScriptThrottle         10 
+   ScriptThrottle            10 
 
    // If true then enable print view and initialize it with the
    // given ip address. Print view routes debug prints from the
-   // backend threads to print view consoles on a host.
+   // control communications threads to print view consoles on a
+   // host.
    PrintViewEnable           true
    PrintViewIPAddress        sms3
 
    // Thread services print and log levels.
    ScriptSeqShortPrintLevel  0 3
    ScriptSeqLongPrintLevel   0 3
-   ControlPrintLevel         0 3
-   ControlUdpPrintLevel      0 3
-   IsochPrintLevel           0 3
    
 SectionEnd
 
 //********************************************************************
 //********************************************************************
 //********************************************************************
+// LCD program parameters.
 
 SectionBegin Lcd
 
    // Display number, usually 1. Use -1 for auto.
-   Display                -1
+   Display                   -1
 
    // Window colors. RGB,A
-   ForeColor              255     255    255    255
-   BackColor              0       0      0      255
+   ForeColor                 255     255    255    255
+   BackColor                 0       0      0      255
 
    // PNG image filenames.
-   ImageFilename0         Image3840_0.png
-   ImageFilename1         Image3840_1.png
+   ImageFilename0            Image3840_0.png
+   ImageFilename1            Image3840_1.png
    
    // Target test variables.
-   SideX                  80
-   SideY                  60
+   SideX                     80
+   SideY                     60
 
    // Timer thread period milliseconds.
-   TimerThreadPeriod      250
-   TimerThreadPeriod      2000
+   TimerThreadPeriod         2000
    
    // If not zero then the draw latency is printed.
-   ShowCode               1
+   ShowCode                  1
    
    // Thread services print and log levels.
-   PrintLevel             0 3
+   PrintLevel                0 3
 
 SectionEnd
 
 //********************************************************************
 //********************************************************************
 //********************************************************************
+// Feynman communciations program parameters.
 
 SectionBegin FCom
 
    // Usb serial ports.
-   GCodePortDevice        /dev/ttyACM0
-   MessagePortDevice      /dev/ttyACM1
+   GCodeCommPortDevice       /dev/ttyACM0
+   BinaryCommPortDevice      /dev/ttyACM1
    
    // Feynman csen settings variables.
-   CSenPrintEnable        false 
-   CSenSampleEnable       false 
-   CSenTimerModulo        10
+   CSenPrintEnable           false 
+   CSenSampleEnable          false 
+   CSenTimerModulo           10
 
    // Thread services print and log levels.
-   GCodeCommPrintLevel      0 3
-   SerialStringPrintLevel   0 3
-   MessagePrintLevel        0 3
-   SerialMsgPrintLevel      0 3
+   GCodeCommPrintLevel       0 3
+   SerialStringPrintLevel    0 3
+   BinaryCommPrintLevel      0 3
+   SerialMsgPrintLevel       0 3
 
 SectionEnd
 
 //********************************************************************
 //********************************************************************
 //********************************************************************
+// Log file program parameters.
 
 SectionBegin LogFile
 
    // Log file timestamp type.
-   TimeType            SystemTime
+   TimeType         SystemTime
 
    // Log file filename.
-   LogFilename         log/WorkLog.txt
+   LogFilename               log/WorkLog.txt
    // If true then the log filename is the full path.
-   FullFilepath       true
+   FullFilepath     true
 
    // If zero then the log file write is not flushed. If non zero then the
    // log file is flushed after every N counts.
-   FlushModulo         1
+   FlushModulo      0
    
    // If zero then flush uses fflush.
    // If one  then flush uses fclose and fopen.
-   FlushMode           1
+   FlushMode        0
 
    // Thread services print and log levels.
-   PrintLevel          0 3
+   PrintLevel       0 3
    
 SectionEnd
 
 //********************************************************************
 //********************************************************************
 //********************************************************************
+// Control communications program parameters.
 
 SectionBegin BackEnd
 
@@ -174,5 +161,8 @@ SectionBegin BackEnd
  
 SectionEnd
 
+//********************************************************************
+//********************************************************************
+//********************************************************************
 
 
