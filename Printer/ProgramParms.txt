@@ -129,13 +129,16 @@ SectionEnd
 //********************************************************************
 // Control communications program parameters.
 
-SectionBegin BackEnd
+SectionBegin CCom
 
-   // Udp ip addresses and receive ports. The frontend is the user
-   // interface and the backend is PrinterExec.
-   BackEndControlPort        56001
-   FrontEndControlPort       56002
-   FrontEndIsochPort         56003
+   // Udp ip addresses and receive ports.
+   // RxControlPort -- printer exec receives  control     messages on this udp port.
+   // TxControlPort -- printer exec transmits control     messages on this udp port.
+   // TxIsochPort   -- printer exec transmits isochronous messages on this udp port.
+
+   RxControlPort             56001
+   TxControlPort             56002
+   TxIsochPort               56003
 
    // If true then use the first receive from ip address as the
    // transmit ip address. Don't open the transmit socket until
