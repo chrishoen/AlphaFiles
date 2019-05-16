@@ -20,7 +20,7 @@ SectionBegin Program
 
    // Show codes.
    ShowCode                  0
-   SplashCode                0
+   SplashCode                2
    SliceCode                 1
 
    // Wait for this time before each script command execution.
@@ -156,11 +156,12 @@ SectionBegin CCom
    
    // Isoch timing parameters.
    IsochTimerPeriod          12
-   IsochTimerModulo          20
   
    // Isoch signal parameters.
+   IsochFrameLength          20
    IsochSignalFreq           0.5
    IsochSignalAmplitude      100.0
+   IsochSignalOffset         0.0
  
 SectionEnd
 
