@@ -5,7 +5,7 @@
 SectionBegin Default
 
    // Usb serial ports.
-   SerialPortDevice        /dev/ttyUSB0
+   SerialRxPortDevice     /dev/ttyUSB0
    
    // Thread services print and log levels.
    SerialRxPrintLevel     3 3

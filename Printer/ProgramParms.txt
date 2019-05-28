@@ -7,17 +7,21 @@ SectionBegin Program
 
    // Thread enable flags.
    // GCodeCommEnable        -- enable the gcode  primary   usb channel to the feynman.
-   // BinaryCommEnable       -- enable the binary secondary usb channel to the feynman.   
-   // LcdGraphicsEnable      -- enable writing slice png files to the lcd.   
+   // BinaryCommEnable       -- enable the binary secondary usb channel to the feynman.
+   // BinarySimEnable        -- enable the binary simulation.
+   // LcdGraphicsEnable      -- enable writing slice png files to the lcd.
    // ControlEnable          -- enable the frontend control udp socket.
-   // IsochEnable            -- enable the frontend isochronous udp socket.   
+   // IsochEnable            -- enable the frontend isochronous udp socket.
+   // ForceEnable            -- enable the force usb channel.
    
    GCodeCommEnable           true
    BinaryCommEnable          false
+   BinarySimEnable           true
    LcdGraphicsEnable         true
    ControlEnable             true
    IsochEnable               true
-
+   ForceEnable               true
+   
    // Show codes.
    ShowCode                  0
    SplashCode                2
@@ -155,14 +159,29 @@ SectionBegin CCom
    IsochPrintLevel           0 3
    
    // Isoch timing parameters.
-   IsochTimerPeriod          12
+   IsochTimerPeriod          100
   
    // Isoch signal parameters.
-   IsochFrameLength          20
-   IsochSignalFreq           0.5
-   IsochSignalAmplitude      100.0
-   IsochSignalOffset         0.0
+   IsochFrameLength          1
+   IsochSignalFreq           0.25
+   IsochSignalAmplitude      40.0
+   IsochSignalOffset         50.0
  
+SectionEnd
+
+//********************************************************************
+//********************************************************************
+//********************************************************************
+// Force sensor usb thread.
+
+SectionBegin Force
+
+   // Usb serial ports.
+   SerialRxPortDevice     /dev/ttyUSB0
+   
+   // Thread services print and log levels.
+   SerialRxPrintLevel     0 3
+
 SectionEnd
 
 //********************************************************************
