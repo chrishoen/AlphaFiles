@@ -19,7 +19,7 @@ SectionBegin Program
    BinarySimEnable           true
    LcdGraphicsEnable         true
    ControlEnable             true
-   IsochEnable               true
+   IsochEnable               false
    ForceEnable               true
    
    // Show codes.
@@ -181,6 +181,15 @@ SectionBegin Force
    
    // Thread services print and log levels.
    SerialRxPrintLevel     0 3
+   
+   // After this many samples, send an isoch control message.
+   IsochModulo            8
+
+   // Isoch message sample scale and offset.
+   // The isoch graph limits are 0..100.
+   // Isoch graph value = scale*sample + offset.
+   IsochScale             0.10
+   IsochOffset            0.0
 
 SectionEnd
 
